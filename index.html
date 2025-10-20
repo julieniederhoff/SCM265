@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operations Management Simulations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        .card-hover {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 min-h-screen">
+    <div class="container mx-auto px-4 py-12">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-5xl font-bold text-white mb-4">
+                📊 Operations Management Simulations
+            </h1>
+            <p class="text-xl text-white opacity-90 max-w-3xl mx-auto">
+                Interactive learning tools to explore inventory management, forecasting, and optimization
+            </p>
+        </div>
+
+        <!-- Simulation Cards -->
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Service Level Calculator -->
+            <div class="bg-white rounded-lg shadow-2xl overflow-hidden card-hover">
+                <div class="bg-gradient-to-r from-blue-500 to-purple-500 p-6 text-white">
+                    <div class="text-5xl mb-3">🎯</div>
+                    <h2 class="text-2xl font-bold mb-2">Service Level Manager</h2>
+                    <p class="text-blue-100 text-sm">Newsvendor Model</p>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-700 mb-4">
+                        Learn to set optimal service levels for different products based on their economics. 
+                        Calculate critical ratios and understand the trade-off between stockouts and excess inventory.
+                    </p>
+                    <div class="space-y-2 mb-6 text-sm">
+                        <div class="flex items-start gap-2">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>Calculate cost of shortage and excess</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>Interactive 20-period simulation</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>Compare your strategy to optimal</span>
+                        </div>
+                    </div>
+                    <a href="service-level-manager.html" 
+                       class="block w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center font-bold py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all">
+                        Launch Simulation →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Concert Merch Manager -->
+            <div class="bg-white rounded-lg shadow-2xl overflow-hidden card-hover">
+                <div class="bg-gradient-to-r from-purple-500 to-pink-500 p-6 text-white">
+                    <div class="text-5xl mb-3">🎸</div>
+                    <h2 class="text-2xl font-bold mb-2">Concert Merch Manager</h2>
+                    <p class="text-purple-100 text-sm">Multi-Product Newsvendor</p>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-700 mb-4">
+                        Manage merchandise inventory for 8 campus concerts. Order t-shirts and hats each week, 
+                        balancing high-margin items against low-margin products with uncertain demand.
+                    </p>
+                    <div class="space-y-2 mb-6 text-sm">
+                        <div class="flex items-start gap-2">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>Two products with different margins</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>8 concert periods with random demand</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>Real-time profit tracking</span>
+                        </div>
+                    </div>
+                    <a href="concert-merch-sim.html" 
+                       class="block w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white text-center font-bold py-3 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all">
+                        Launch Simulation →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Forecasting Problem -->
+            <div class="bg-white rounded-lg shadow-2xl overflow-hidden card-hover">
+                <div class="bg-gradient-to-r from-green-500 to-teal-500 p-6 text-white">
+                    <div class="text-5xl mb-3">📈</div>
+                    <h2 class="text-2xl font-bold mb-2">Forecasting Challenge</h2>
+                    <p class="text-green-100 text-sm">Demand Prediction</p>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-700 mb-4">
+                        Practice forecasting techniques with real-world scenarios. Analyze historical demand patterns 
+                        and generate accurate predictions using various forecasting methods.
+                    </p>
+                    <div class="space-y-2 mb-6 text-sm">
+                        <div class="flex items-start gap-2">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>Multiple forecasting methods</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>Historical demand data analysis</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>Forecast accuracy metrics</span>
+                        </div>
+                    </div>
+                    <a href="forecasting-sim.html" 
+                       class="block w-full bg-gradient-to-r from-green-600 to-teal-600 text-white text-center font-bold py-3 rounded-lg hover:from-green-700 hover:to-teal-700 transition-all">
+                        Launch Simulation →
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Learning Objectives -->
+        <div class="max-w-4xl mx-auto mt-16 bg-white bg-opacity-95 rounded-lg shadow-2xl p-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Learning Objectives</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-lg font-bold text-indigo-700 mb-3">📚 Core Concepts</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-600">•</span>
+                            <span>Newsvendor model and critical ratio</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-600">•</span>
+                            <span>Service level optimization</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-600">•</span>
+                            <span>Cost of shortage vs. cost of excess</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-indigo-600">•</span>
+                            <span>Demand uncertainty management</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-purple-700 mb-3">🎯 Skills Developed</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start gap-2">
+                            <span class="text-purple-600">•</span>
+                            <span>Analytical decision-making</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-purple-600">•</span>
+                            <span>Risk-reward trade-off analysis</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-purple-600">•</span>
+                            <span>Inventory optimization strategies</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-purple-600">•</span>
+                            <span>Performance benchmarking</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="max-w-4xl mx-auto mt-8 bg-yellow-50 border-2 border-yellow-300 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-yellow-800 mb-3">💡 Getting Started</h3>
+            <p class="text-gray-700 mb-3">
+                Each simulation is designed to be completed in 15-30 minutes. Click on any card above to begin. 
+                You can complete them in any order, but we recommend starting with the Service Level Manager 
+                to understand the foundational concepts.
+            </p>
+            <p class="text-sm text-gray-600 italic">
+                Note: All simulations run entirely in your browser - no installation or login required!
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center mt-12 text-white opacity-75">
+            <p class="text-sm">
+                Interactive Operations Management Simulations | Educational Use
+            </p>
+        </div>
+    </div>
+</body>
+</html>
